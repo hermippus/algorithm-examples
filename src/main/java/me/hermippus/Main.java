@@ -6,7 +6,7 @@ import static me.hermippus.algorithms.compression.RLEAlgorithm.decompress;
 public class Main {
     public static void main(String[] args) {
         // RLE Compression Algorithm
-        String input = "AAAAAAAAAABBBBBBBBBBBBCCCCCDDDDDDDDDDDDDD";
+        String input = "LLLLLLLLLLLLLLLLLLLLLBBBBBBBBBBBBBBBBBBBBBBBOOOOOOOOOO";
         String compressed = compress(input);
         String decompressed = decompress(compressed);
 

@@ -30,15 +30,15 @@ public class RLEAlgorithm {
         }
 
         StringBuilder result = new StringBuilder();
-        StringBuilder counter = new StringBuilder();
+        StringBuilder count = new StringBuilder();
 
         for (char c : input.toCharArray()) {
             if (Character.isDigit(c)) {
-                counter.append(c);
+                count.append(c);
             } else {
-                int count = Integer.parseInt(counter.toString());
-                result.append(String.valueOf(c).repeat(Math.max(0, count)));
-                counter.setLength(0);
+                int counter = Integer.parseInt(count.toString());
+                result.append(String.valueOf(c).repeat(counter));
+                count.setLength(0);
             }
         }
 
