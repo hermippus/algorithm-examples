@@ -13,5 +13,11 @@ public class Main {
         System.out.println("Original string: " + input);
         System.out.println("Compressed string: " + compressed);
         System.out.println("Decompressed string: " + decompressed);
+        /*
+        Output:
+        Original string: LLLLLLLLLLLLLLLLLLLLLBBBBBBBBBBBBBBBBBBBBBBBOOOOOOOOOO
+        Compressed string: 21L23B10O
+        Decompressed string: LLLLLLLLLLLLLLLLLLLLLBBBBBBBBBBBBBBBBBBBBBBBOOOOOOOOOO
+         */
     }
 }
