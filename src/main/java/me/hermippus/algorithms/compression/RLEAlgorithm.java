@@ -11,7 +11,7 @@ public class RLEAlgorithm {
         StringBuilder result = new StringBuilder();
         char currentChar = input.charAt(0);
         int count = 1;
-
+    
         for (int i = 1; i < input.length(); i++) {
             if (input.charAt(i) == currentChar) {
                 count++;

@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("application")
     id("org.graalvm.buildtools.native") version "0.10.4"
 }
 
@@ -21,6 +22,10 @@ graalvmNative {
             buildArgs.addAll("-Ob", "--gc=G1")
         }
     }
+}
+
+application {
+  mainClass.set("me.hermippus.Main")
 }
 
 tasks.withType(Jar::class) {
