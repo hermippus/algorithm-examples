@@ -33,7 +33,7 @@ To manually build the project, follow these steps:
 $ git clone https://github.com/hermippus/algorithm-examples
 
 # navigate to the project directory
-$ cd image-compression-server
+$ cd algorithm-examples
 
 # build with Gradle (Jar)
 $ ./gradlew build
