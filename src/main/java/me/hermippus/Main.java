@@ -19,8 +19,6 @@ public class Main {
     }
 
     private static void useBruteForceTwoSum() {
-        Supplier<Integer> test = () -> 1;
-        System.out.println(test.get());
         int[] numbers = { 5, 3, 9, 10, 3, 7 };
         int[] result = bruteForceTwoSum(numbers, 6);
         System.out.println(Arrays.toString(result));
