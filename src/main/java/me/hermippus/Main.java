@@ -1,6 +1,9 @@
 package me.hermippus;
 
+import me.hermippus.algorithms.TuringMachine;
+
 import java.util.Arrays;
+import java.util.function.Supplier;
 
 import static me.hermippus.algorithms.TwoSum.bruteForceTwoSum;
 import static me.hermippus.algorithms.compression.RLEAlgorithm.compress;
@@ -11,9 +14,13 @@ public class Main {
         useBruteForceTwoSum();
         System.out.println();
         useRLECompressionAlgorithm();
+        System.out.println();
+        useTuringMachine();
     }
 
     private static void useBruteForceTwoSum() {
+        Supplier<Integer> test = () -> 1;
+        System.out.println(test.get());
         int[] numbers = { 5, 3, 9, 10, 3, 7 };
         int[] result = bruteForceTwoSum(numbers, 6);
         System.out.println(Arrays.toString(result));
@@ -36,6 +43,17 @@ public class Main {
         Original string: LLLLLLLLLLLLLLLLLLLLLBBBBBBBBBBBBBBBBBBBBBBBOOOOOOOOOO
         Compressed string: 21L23B10O
         Decompressed string: LLLLLLLLLLLLLLLLLLLLLBBBBBBBBBBBBBBBBBBBBBBBOOOOOOOOOO
+         */
+    }
+
+    private static void useTuringMachine() {
+        TuringMachine turingMachine = new TuringMachine();
+        char[] tape = { '_', '0', '1', '0', '1', '1', '0', '_'};
+        turingMachine.run(tape);
+        /*
+        Output:
+        Original tape: [_, 0, 1, 0, 1, 1, 0, _]
+        Changed tape: [_, 1, 0, 1, 0, 0, 1, _]
          */
     }
 
