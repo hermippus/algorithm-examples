@@ -12,7 +12,7 @@ import static me.hermippus.algorithms.compression.RLEAlgorithm.decompress;
 public class Main {
     public static void main(String[] args) {
 
-        int[] applyOperations = { 0, 1 };
+        int[] applyOperations = { 1, 2, 2, 1, 1, 0 };
         useApplyOperations(applyOperations);
         System.out.println();
         useBruteForceTwoSum();
