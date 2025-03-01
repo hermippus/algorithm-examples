@@ -2,7 +2,6 @@ package me.hermippus.algorithms.compression;
 
 public class RLEAlgorithm {
 
-
     public static String compress(String input) {
         if (input == null || input.isEmpty()) {
             return "";

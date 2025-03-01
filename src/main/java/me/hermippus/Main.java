@@ -3,19 +3,30 @@ package me.hermippus;
 import me.hermippus.algorithms.TuringMachine;
 
 import java.util.Arrays;
-import java.util.function.Supplier;
 
+import static me.hermippus.algorithms.ApplyOperations.applyOperations;
 import static me.hermippus.algorithms.TwoSum.bruteForceTwoSum;
 import static me.hermippus.algorithms.compression.RLEAlgorithm.compress;
 import static me.hermippus.algorithms.compression.RLEAlgorithm.decompress;
 
 public class Main {
     public static void main(String[] args) {
+
+        int[] applyOperations = { 0, 1 };
+        useApplyOperations(applyOperations);
+        System.out.println();
         useBruteForceTwoSum();
         System.out.println();
         useRLECompressionAlgorithm();
         System.out.println();
         useTuringMachine();
+
+
+    }
+
+    private static void useApplyOperations(int[] nums) {
+        int[] result = applyOperations(nums);
+        System.out.println(Arrays.toString(result));
     }
 
     private static void useBruteForceTwoSum() {
