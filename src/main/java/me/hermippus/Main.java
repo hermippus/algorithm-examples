@@ -27,6 +27,10 @@ public class Main {
     private static void useApplyOperations(int[] nums) {
         int[] result = applyOperations(nums);
         System.out.println(Arrays.toString(result));
+        /*
+        Output:
+        [1, 4, 2, 0, 0, 0]
+         */
     }
 
     private static void useBruteForceTwoSum() {
